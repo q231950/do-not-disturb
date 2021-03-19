@@ -2,13 +2,14 @@
 import PackageDescription
 
 let package = Package(
-	name: "do-not-disturb",
-	platforms: [
-		.macOS(.v10_10)
-	],
+	name: "DoNotDisturb",
+    products: [
+        .library(name: "DoNotDisturb",
+                 targets: ["DoNotDisturb"])
+    ],
 	targets: [
 		.target(
-			name: "do-not-disturb"
+			name: "DoNotDisturb"
 		)
 	]
 )
